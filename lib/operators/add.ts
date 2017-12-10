@@ -1,27 +1,3 @@
-/*
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MathStuff.Functions.Operators {
-	public class AddOperator : Operator {
-		public override char Representation => '+';
-		public override int Priority => 3;
-		public override float Calculate(float a, float b) => a + b;
-
-		public override Node Derive(Node a, Node b) {
-			return new OperatorNode(Find('+')) {
-				Left = a.Derive(),
-				Right = b.Derive()
-			};
-		}
-	}
-}
-
-*/
-
 import Node from "../Node";
 import Operator from "../Operator";
 import OperatorNode from "../nodes/OperatorNode";

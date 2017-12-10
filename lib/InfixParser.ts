@@ -54,4 +54,8 @@ export default class InfixParser {
         const value = Number(token);
         return (isNaN(value) ? token : value) + " ";
     }
+
+    public static parse(infix: string): string {
+        return new InfixParser(infix).parse();
+    }
 }
