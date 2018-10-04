@@ -48,10 +48,14 @@ describe("Vector3", () => {
     });
 
     describe("#angle()", () => {
-        // TODO write
+        it("should return the correct result", () => {
+            expect(new Vector3(1, 1, 0).angle(new Vector3(1, -1, 0))).to.equal(Math.PI / 2);
+        });
     });
     describe("#cross()", () => {
-        // TODO write
+        it("should return the correct result", () => {
+            expectEquals(new Vector3(1, 1, 0).cross(new Vector3(1, -1, 0)), new Vector3(0, 0, -2));
+        });
     });
     describe("#dot()", () => {
         it("should return the correct result", () => {
@@ -64,7 +68,9 @@ describe("Vector3", () => {
         });
     });
     describe("#project()", () => {
-        // TODO write
+        it("should return the correct result", () => {
+            expectEquals(new Vector3(1, 1, 0).project(new Vector3(1, -1, 0)), new Vector3(0, 0, 0));
+        });
     });
     describe("#scale()", () => {
         it("should return the correct result", () => {
