@@ -65,11 +65,11 @@ export class Vector3<Value = number> {
         return [this.x, this.y, this.z];
     }
 
-    isNumeric(): this is Vector3<number> {
+    isNumeric(): this is Vector3 {
         return typeof(this.x) === "number";
     }
 
-    numeric<Params extends any[], Return>(method: (this: Vector3<number>, ...params: Params) => Return): (...params: Params) => Return {
+    numeric<Params extends any[], Return>(method: (this: Vector3, ...params: Params) => Return): (...params: Params) => Return {
         return (...params: Params): Return => {
             if (!this.isNumeric()) throw new Error("non-numeric vector can't do this");
             return method.apply(this, params);
