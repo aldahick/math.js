@@ -1,19 +1,29 @@
 {
   "name": "@aldahick/math",
   "version": "0.0.1",
-  "description": "Several mathematical functions implemented using minimal built-in functions.",
-  "homepage": "http://github.com/aldahick/math.js",
-  "repository": "git://github.com:aldahick/math.js.git",
+  "description": "Several mathematical functions and types implemented for fun",
+  "homepage": "https://github.com/aldahick/math.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldahick/math.js.git"
+  },
   "license": "MIT",
   "author": "Alex Hicks <alex@alexhicks.net> (https://alexhicks.net)",
-  "contributors": [],
+  "scripts": {
+    "test": "mocha"
+  },
   "main": "./index.js",
+  "dependencies": {},
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.43",
     "@types/node": "^8.0.57",
+    "@types/source-map-support": "^0.4.1",
     "chai": "^4.1.2",
-    "mocha": "^3.5.3"
+    "mocha": "^3.5.3",
+    "source-map-support": "^0.5.9",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
   },
   "engines": {
     "node": ">=8.4.0"
