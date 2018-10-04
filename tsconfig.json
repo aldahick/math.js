@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,

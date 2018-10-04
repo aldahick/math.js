@@ -13,6 +13,7 @@
     "test": "mocha"
   },
   "main": "./index.js",
+  "types": "./index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^4.1.6",
