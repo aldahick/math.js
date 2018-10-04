@@ -17,6 +17,7 @@ export default class OperatorNode extends Node {
     }
 
     public derive(): Node {
+        if (this.left === undefined || this.right === undefined) throw new ReferenceError();
         return this.operator.derive(this.left, this.right);
     }
 

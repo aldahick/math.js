@@ -19,7 +19,7 @@ export default class PostfixParser {
             node.left = nodes.pop();
             nodes.push(node);
         }
-        return nodes.pop();
+        return nodes.pop()!;
     }
 
     private static parseToken(token: string): Node {

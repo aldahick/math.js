@@ -32,7 +32,7 @@ export default class InfixParser {
             }
         }
         while (operators.length > 0) output += operators.pop() + " ";
-        return output;
+        return output.trimRight();
     }
 
     private getNextToken(): string {

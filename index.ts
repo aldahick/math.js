@@ -1,6 +1,5 @@
 import * as readline from "readline";
-import InfixParser from "./lib/InfixParser";
-import PostfixParser from "./lib/PostfixParser";
+import { InfixParser, PostfixParser } from "./lib/parsing";
 
 function main(): void {
     const stdin = readline.createInterface(process.stdin);
