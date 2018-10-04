@@ -6,4 +6,5 @@ unit tests.
 
 ## Directories
 
+- **dimensional:** so far, just vectors and such
 - **parsing:** basic infix/postfix parser, and node evaluator
